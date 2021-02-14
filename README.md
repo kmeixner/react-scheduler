@@ -1,0 +1,1 @@
+* Very minimum basic ExpressJS app (NodeJS + ReactJS) that serves no content (uncomment Hello World! in App.js to display "Hello World!")
