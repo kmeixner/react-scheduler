@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SelectStaffMember from './SelectStaffMember';
+import ShiftLoadForDay from './ShiftLoadForDay';
 import './App.css';
 
 class App extends Component {
@@ -134,59 +135,59 @@ state = {
 			<div className="t2h7 heading">Totals</div>
 			
 			<div className="x1c1 leftheading">X1</div>
-			<div className="x1c2">Y</div>
-			<div className="x1c3">Y</div>
-			<div className="x1c4">Y</div>
-			<div className="x1c5">Y</div>
-			<div className="x1c6">Y</div>
+			<ShiftLoadForDay className="x1c2" />
+			<ShiftLoadForDay className="x1c3" />
+			<ShiftLoadForDay className="x1c4" />
+			<ShiftLoadForDay className="x1c5" />
+			<ShiftLoadForDay className="x1c6" />
 			<div className="x1c7">YY</div>
 			
 			<div className="x2c1 leftheading">X1</div>
-			<div className="x2c2">Y</div>
-			<div className="x2c3">Y</div>
-			<div className="x2c4">Y</div>
-			<div className="x2c5">Y</div>
-			<div className="x2c6">Y</div>
+			<ShiftLoadForDay className="x2c2" />
+			<ShiftLoadForDay className="x2c3" />
+			<ShiftLoadForDay className="x2c4" />
+			<ShiftLoadForDay className="x2c5" />
+			<ShiftLoadForDay className="x2c6" />
 			<div className="x2c7">YY</div>
 
 			<div className="x3c1 leftheading">X1</div>
-			<div className="x3c2">Y</div>
-			<div className="x3c3">Y</div>
-			<div className="x3c4">Y</div>
-			<div className="x3c5">Y</div>
-			<div className="x3c6">Y</div>
+			<ShiftLoadForDay className="x3c2" />
+			<ShiftLoadForDay className="x3c3" />
+			<ShiftLoadForDay className="x3c4" />
+			<ShiftLoadForDay className="x3c5" />
+			<ShiftLoadForDay className="x3c6" />
 			<div className="x3c7">YY</div>
 
 			<div className="x4c1 leftheading">X1</div>
-			<div className="x4c2">Y</div>
-			<div className="x4c3">Y</div>
-			<div className="x4c4">Y</div>
-			<div className="x4c5">Y</div>
-			<div className="x4c6">Y</div>
+			<ShiftLoadForDay className="x4c2" />
+			<ShiftLoadForDay className="x4c3" />
+			<ShiftLoadForDay className="x4c4" />
+			<ShiftLoadForDay className="x4c5" />
+			<ShiftLoadForDay className="x4c6" />
 			<div className="x4c7">YY</div>
 
 			<div className="x5c1 leftheading">X1</div>
-			<div className="x5c2">Y</div>
-			<div className="x5c3">Y</div>
-			<div className="x5c4">Y</div>
-			<div className="x5c5">Y</div>
-			<div className="x5c6">Y</div>
+			<ShiftLoadForDay className="x5c2" />
+			<ShiftLoadForDay className="x5c3" />
+			<ShiftLoadForDay className="x5c4" />
+			<ShiftLoadForDay className="x5c5" />
+			<ShiftLoadForDay className="x5c6" />
 			<div className="x5c7">YY</div>
 
 			<div className="x6c1 leftheading">X1</div>
-			<div className="x6c2">Y</div>
-			<div className="x6c3">Y</div>
-			<div className="x6c4">Y</div>
-			<div className="x6c5">Y</div>
-			<div className="x6c6">Y</div>
+			<ShiftLoadForDay className="x6c2" />
+			<ShiftLoadForDay className="x6c3" />
+			<ShiftLoadForDay className="x6c4" />
+			<ShiftLoadForDay className="x6c5" />
+			<ShiftLoadForDay className="x6c6" />
 			<div className="x6c7">YY</div>
 
 			<div className="x7c1 leftheading">X1</div>
-			<div className="x7c2">Y</div>
-			<div className="x7c3">Y</div>
-			<div className="x7c4">Y</div>
-			<div className="x7c5">Y</div>
-			<div className="x7c6">Y</div>
+			<ShiftLoadForDay className="x7c2" />
+			<ShiftLoadForDay className="x7c3" />
+			<ShiftLoadForDay className="x7c4" />
+			<ShiftLoadForDay className="x7c5" />
+			<ShiftLoadForDay className="x7c6" />
 			<div className="x7c7">YY</div>			
 			
 		</div>
