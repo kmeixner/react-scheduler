@@ -16,15 +16,20 @@ class SelectStaffMember extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {employee: ''};
+    this.state = {employee: 'None'};
   }
   
-	handleChange = (event) => {
-	  this.setState({employee: event.value});
-	}
+  handleChange = (event) => {
+	this.setState({employee: event.value});
+  }
 	
   render() {
-    return <Select options={options} onChange={this.handleChange.bind(this)} />;
+	const selectedValue = "None";
+    return <Select 
+				options={options} 
+				defaultValue={{ label: 'None', value: 'None' }} 
+				onChange={this.handleChange.bind(this)} 				
+			/>;
   }
 }
 
