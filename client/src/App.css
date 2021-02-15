@@ -186,5 +186,10 @@
 	'x7c1 x7c2 x7c3 x7c4 x7c5 x7c6 x7c7'
 }
 
+.tableHeader {
+	font-weight: bold;
+	text-align: center;
+}
+
 
 

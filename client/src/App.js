@@ -29,7 +29,7 @@ state = {
       <div className="App">
 		<div className="grid-container">
 		
-			<div className="h1">Schedule</div>
+			<div className="h1 tableHeader">Schedule</div>
 			
 			<BlankCell className="t1h1" />			
 			<div className="t1h2">Monday</div>
@@ -123,7 +123,7 @@ state = {
 			<div className="r12c6">X</div>
 			<BlankCell className="r12c7" />
 
-			<div className="h2">Load</div>
+			<div className="h2 tableHeader">Load</div>
 			
 			<div className="t2h1">Staff Member</div>
 			<div className="t2h2">Monday</div>
