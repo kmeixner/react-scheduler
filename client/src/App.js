@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SelectStaffMember from './SelectStaffMember';
 import './App.css';
 
 class App extends Component {
@@ -39,87 +40,87 @@ state = {
 			<div className="t1h7">&nbsp;</div>
 			
 			<div className="r1c1 leftheading">Morning Up stairs</div>
-			<div className="r1c2">X</div>
-			<div className="r1c3">X</div>
-			<div className="r1c4">X</div>
-			<div className="r1c5">X</div>
-			<div className="r1c6">X</div>
+			<SelectStaffMember className="r1c2" />
+			<SelectStaffMember className="r1c3" />
+			<SelectStaffMember className="r1c4" />
+			<SelectStaffMember className="r1c5" />
+			<SelectStaffMember className="r1c6" />
 			<div className="r1c7">&nbsp;</div>
 			
 			<div className="r2c1 leftheading">Morning Down tairs</div>
-			<div className="r2c2">X</div>
-			<div className="r2c3">X</div>
-			<div className="r2c4">X</div>
-			<div className="r2c5">X</div>
-			<div className="r2c6">X</div>
+			<SelectStaffMember className="r2c2" />
+			<SelectStaffMember className="r2c3" />
+			<SelectStaffMember className="r2c4" />
+			<SelectStaffMember className="r2c5" />
+			<SelectStaffMember className="r2c6" />
 			<div className="r2c7">&nbsp;</div>
 			
 			<div className="r3c1 leftheading">Morning Parking Lot</div>
-			<div className="r3c2">X</div>
-			<div className="r3c3">X</div>
-			<div className="r3c4">X</div>
-			<div className="r3c5">X</div>
-			<div className="r3c6">X</div>
+			<SelectStaffMember className="r3c2" />
+			<SelectStaffMember className="r3c3" />
+			<SelectStaffMember className="r3c4" />
+			<SelectStaffMember className="r3c5" />
+			<SelectStaffMember className="r3c6" />
 			<div className="r3c7">&nbsp;</div>
 
 			<div className="r4">&nbsp;</div>
 			
 			<div className="r5c1 leftheading">Lunch A</div>
-			<div className="r5c2">X</div>
-			<div className="r5c3">X</div>
-			<div className="r5c4">X</div>
-			<div className="r5c5">X</div>
-			<div className="r5c6">X</div>
+			<SelectStaffMember className="r5c2" />
+			<SelectStaffMember className="r5c3" />
+			<SelectStaffMember className="r5c4" />
+			<SelectStaffMember className="r5c5" />
+			<SelectStaffMember className="r5c6" />
 			<div className="r5c7">&nbsp;</div>
 			
 			<div className="r6c1 leftheading">Lunch B</div>
-			<div className="r6c2">X</div>
-			<div className="r6c3">X</div>
-			<div className="r6c4">X</div>
-			<div className="r6c5">X</div>
-			<div className="r6c6">X</div>
+			<SelectStaffMember className="r6c2" />
+			<SelectStaffMember className="r6c3" />
+			<SelectStaffMember className="r6c4" />
+			<SelectStaffMember className="r6c5" />
+			<SelectStaffMember className="r6c6" />
 			<div className="r6c7">&nbsp;</div>
 			
 			<div className="r7c1 leftheading">Lunch C</div>
-			<div className="r7c2">X</div>
-			<div className="r7c3">X</div>
-			<div className="r7c4">X</div>
-			<div className="r7c5">X</div>
-			<div className="r7c6">X</div>
+			<SelectStaffMember className="r7c2" />
+			<SelectStaffMember className="r7c3" />
+			<SelectStaffMember className="r7c4" />
+			<SelectStaffMember className="r7c5" />
+			<SelectStaffMember className="r7c6" />
 			<div className="r7c7">&nbsp;</div>
 
 			<div className="r8c1 leftheading">Lunch D</div>
-			<div className="r8c2">X</div>
-			<div className="r8c3">X</div>
-			<div className="r8c4">X</div>
-			<div className="r8c5">X</div>
-			<div className="r8c6">X</div>
+			<SelectStaffMember className="r8c2" />
+			<SelectStaffMember className="r8c3" />
+			<SelectStaffMember className="r8c4" />
+			<SelectStaffMember className="r8c5" />
+			<SelectStaffMember className="r8c6" />
 			<div className="r8c7">&nbsp;</div>
 
 			<div className="r9">&nbsp;</div>
 
 			<div className="r10c1 leftheading">Afternoon Up stairs</div>
-			<div className="r10c2">X</div>
-			<div className="r10c3">X</div>
-			<div className="r10c4">X</div>
-			<div className="r10c5">X</div>
-			<div className="r10c6">X</div>
+			<SelectStaffMember className="r10c2" />
+			<SelectStaffMember className="r10c3" />
+			<SelectStaffMember className="r10c4" />
+			<SelectStaffMember className="r10c5" />
+			<SelectStaffMember className="r10c6" />
 			<div className="r10c7">&nbsp;</div>
 			
 			<div className="r11c1 leftheading">Afternoon Down tairs</div>
-			<div className="r11c2">X</div>
-			<div className="r11c3">X</div>
-			<div className="r11c4">X</div>
-			<div className="r11c5">X</div>
-			<div className="r11c6">X</div>
+			<SelectStaffMember className="r11c2" />
+			<SelectStaffMember className="r11c3" />
+			<SelectStaffMember className="r11c4" />
+			<SelectStaffMember className="r11c5" />
+			<SelectStaffMember className="r11c6" />
 			<div className="r11c7">&nbsp;</div>
 			
 			<div className="rc1 leftheading">Afternoon Parking Lot</div>
-			<div className="r12c2">X</div>
-			<div className="r12c3">X</div>
-			<div className="r12c4">X</div>
-			<div className="r12c5">X</div>
-			<div className="r12c6">X</div>
+			<SelectStaffMember className="r12c2" />
+			<SelectStaffMember className="r12c3" />
+			<SelectStaffMember className="r12c4" />
+			<SelectStaffMember className="r12c5" />
+			<SelectStaffMember className="r12c6" />
 			<div className="r12c7">&nbsp;</div>
 
 			<div className="h2 heading">Load</div>
