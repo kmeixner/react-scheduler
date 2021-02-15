@@ -143,7 +143,7 @@ state = {
 			<ShiftLoadForDay className="x1c6" />
 			<ShiftLoadForWeek className="x1c7" />
 			
-			<div className="x2c1 leftheading">X1</div>
+			<div className="x2c1 leftheading">X2</div>
 			<ShiftLoadForDay className="x2c2" />
 			<ShiftLoadForDay className="x2c3" />
 			<ShiftLoadForDay className="x2c4" />
@@ -151,7 +151,7 @@ state = {
 			<ShiftLoadForDay className="x2c6" />
 			<ShiftLoadForWeek className="x2c7" />
 
-			<div className="x3c1 leftheading">X1</div>
+			<div className="x3c1 leftheading">X3</div>
 			<ShiftLoadForDay className="x3c2" />
 			<ShiftLoadForDay className="x3c3" />
 			<ShiftLoadForDay className="x3c4" />
@@ -159,7 +159,7 @@ state = {
 			<ShiftLoadForDay className="x3c6" />
 			<ShiftLoadForWeek className="x3c7" />
 
-			<div className="x4c1 leftheading">X1</div>
+			<div className="x4c1 leftheading">X4</div>
 			<ShiftLoadForDay className="x4c2" />
 			<ShiftLoadForDay className="x4c3" />
 			<ShiftLoadForDay className="x4c4" />
@@ -167,7 +167,7 @@ state = {
 			<ShiftLoadForDay className="x4c6" />
 			<ShiftLoadForWeek className="x4c7" />
 
-			<div className="x5c1 leftheading">X1</div>
+			<div className="x5c1 leftheading">X5</div>
 			<ShiftLoadForDay className="x5c2" />
 			<ShiftLoadForDay className="x5c3" />
 			<ShiftLoadForDay className="x5c4" />
@@ -175,7 +175,7 @@ state = {
 			<ShiftLoadForDay className="x5c6" />
 			<ShiftLoadForWeek className="x5c7" />
 
-			<div className="x6c1 leftheading">X1</div>
+			<div className="x6c1 leftheading">X6</div>
 			<ShiftLoadForDay className="x6c2" />
 			<ShiftLoadForDay className="x6c3" />
 			<ShiftLoadForDay className="x6c4" />
@@ -183,7 +183,7 @@ state = {
 			<ShiftLoadForDay className="x6c6" />
 			<ShiftLoadForWeek className="x6c7" />
 
-			<div className="x7c1 leftheading">X1</div>
+			<div className="x7c1 leftheading">X7</div>
 			<ShiftLoadForDay className="x7c2" />
 			<ShiftLoadForDay className="x7c3" />
 			<ShiftLoadForDay className="x7c4" />
