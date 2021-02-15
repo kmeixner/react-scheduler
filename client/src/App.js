@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BlankCell from './BlankCell';
 import './App.css';
 
 class App extends Component {
@@ -30,13 +31,13 @@ state = {
 		
 			<div className="h1">Schedule</div>
 			
-			<div className="t1h1">&nbsp;</div>
+			<BlankCell className="t1h1" />			
 			<div className="t1h2">Monday</div>
 			<div className="t1h3">Tuesday</div>
 			<div className="t1h4">Wednesday</div>
 			<div className="t1h5">Thursday</div>
 			<div className="t1h6">Friday</div>
-			<div className="t1h7">&nbsp;</div>
+			<BlankCell className="t1h7" />
 			
 			<div className="r1c1">Morning Up stairs</div>
 			<div className="r1c2">X</div>
@@ -44,7 +45,7 @@ state = {
 			<div className="r1c4">X</div>
 			<div className="r1c5">X</div>
 			<div className="r1c6">X</div>
-			<div className="r1c7">&nbsp;</div>			
+			<BlankCell className="r1c7" />
 			
 			<div className="r2c1">Morning Down tairs</div>
 			<div className="r2c2">X</div>
@@ -52,7 +53,7 @@ state = {
 			<div className="r2c4">X</div>
 			<div className="r2c5">X</div>
 			<div className="r2c6">X</div>
-			<div className="r2c7">&nbsp;</div>
+			<BlankCell className="r2c7" />
 			
 			<div className="r3c1">Morning Parking Lot</div>
 			<div className="r3c2">X</div>
@@ -60,7 +61,7 @@ state = {
 			<div className="r3c4">X</div>
 			<div className="r3c5">X</div>
 			<div className="r3c6">X</div>
-			<div className="r3c7">&nbsp;</div>
+			<BlankCell className="r3c7" />
 
 			<div className="r4">&nbsp;</div>
 			
@@ -70,7 +71,7 @@ state = {
 			<div className="r5c4">X</div>
 			<div className="r5c5">X</div>
 			<div className="r5c6">X</div>
-			<div className="r5c7">&nbsp;</div>
+			<BlankCell className="r5c7" />
 			
 			<div className="r6c1">Lunch B</div>
 			<div className="r6c2">X</div>
@@ -78,7 +79,7 @@ state = {
 			<div className="r6c4">X</div>
 			<div className="r6c5">X</div>
 			<div className="r6c6">X</div>
-			<div className="r6c7">&nbsp;</div>
+			<BlankCell className="r6c7" />
 			
 			<div className="r7c1">Lunch C</div>
 			<div className="r7c2">X</div>
@@ -86,7 +87,7 @@ state = {
 			<div className="r7c4">X</div>
 			<div className="r7c5">X</div>
 			<div className="r7c6">X</div>
-			<div className="r7c7">&nbsp;</div>
+			<BlankCell className="r7c7" />
 
 			<div className="r8c1">Lunch D</div>
 			<div className="r8c2">X</div>
@@ -94,7 +95,7 @@ state = {
 			<div className="r8c4">X</div>
 			<div className="r8c5">X</div>
 			<div className="r8c6">X</div>
-			<div className="r8c7">&nbsp;</div>			
+			<BlankCell className="r8c7" />
 
 			<div className="r9">&nbsp;</div>
 
@@ -104,7 +105,7 @@ state = {
 			<div className="r10c4">X</div>
 			<div className="r10c5">X</div>
 			<div className="r10c6">X</div>
-			<div className="r10c7">&nbsp;</div>			
+			<BlankCell className="r10c7" />
 			
 			<div className="r11c1">Afternoon Down tairs</div>
 			<div className="r11c2">X</div>
@@ -112,7 +113,7 @@ state = {
 			<div className="r11c4">X</div>
 			<div className="r11c5">X</div>
 			<div className="r11c6">X</div>
-			<div className="r11c7">&nbsp;</div>
+			<BlankCell className="r11c7" />
 			
 			<div className="rc1">Afternoon Parking Lot</div>
 			<div className="r12c2">X</div>
@@ -120,7 +121,7 @@ state = {
 			<div className="r12c4">X</div>
 			<div className="r12c5">X</div>
 			<div className="r12c6">X</div>
-			<div className="r12c7">&nbsp;</div>
+			<BlankCell className="r12c7" />
 
 			<div className="h2">Load</div>
 			
