@@ -4,12 +4,12 @@ class ShiftLoadForWeek extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {weeklyload: 0};	
   }
 	
   render() {
-    return <div>{this.state.weeklyload}</div>;
+    return <div>{this.props.weeklyload}</div>;
   }
 }
+ShiftLoadForWeek.defaultProps = {weeklyload:0};
 
 export default ShiftLoadForWeek;

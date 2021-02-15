@@ -4,12 +4,12 @@ class ShiftLoadForDay extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {dailyload: 0};
   }
 	
   render() {
-    return <div>{this.state.dailyload}</div>;
+    return <div>{this.props.dailyload}</div>;
   }
 }
+ShiftLoadForDay.defaultProps = {dailyload:0};
 
 export default ShiftLoadForDay;
