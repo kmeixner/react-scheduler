@@ -249,9 +249,13 @@ const mapStateToProps = (state) => {
 	return {allShiftInfo: aInfo};
 }
 
-//const mapDispatchToProps = dispatch => {
-//	return bindActionCreators({});
-//}
+const mapDispatchToProps = (dispatch) => {
+  return {
+    submitChangeShift: (employee, weekday, shift) => {
+       dispatch(changeShift(employee, weekday, shift))
+    }
+  }
+};
 
 // END REDUX (except for <Provider> tag below)
 
