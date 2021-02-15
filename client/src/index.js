@@ -6,12 +6,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const myReducer = function (state = 0, action) {
+const defaultShiftState = {
+  X1: [],
+  X2: [],
+  X3: [],
+  X4: [],
+  X5: [],
+  X6: [],
+  X7: [],
+};
+
+const myReducer = function (state = defaultShiftState, action) {
   switch (action.type) {
-    case "INCREMENT":
-      return state + 1;
-    case "DECREMENT":
-      return state - 1;
+    case "ADD_SHIFT":
+      return state; // TO DO: handle changes here
+    case "REMOVE_SHIFT":
+      return state; // TO DO: handle changes here
+    case "CHANGE_SHIFT":
+      return state; // TO DO: handle changes here
     default:
       return state;
   }
