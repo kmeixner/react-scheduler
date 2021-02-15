@@ -1,3 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.heading, .leftheading {
+	font-weight: bold;
+}
+
+.leftheading {
+	text-align: left;
+}
+
 .h1 { grid-area: scheduleheading; }
 
 .t1h1 { grid-area: t1h1; }
@@ -185,11 +197,3 @@
 	'x6c1 x6c2 x6c3 x6c4 x6c5 x6c6 x6c7'
 	'x7c1 x7c2 x7c3 x7c4 x7c5 x7c6 x7c7'
 }
-
-.tableHeader {
-	font-weight: bold;
-	text-align: center;
-}
-
-
-
