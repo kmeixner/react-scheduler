@@ -1,4 +1,190 @@
+.h1 { grid-area: scheduleheading; }
 
+.t1h1 { grid-area: t1h1; }
+.t1h2 { grid-area: t1h2; }
+.t1h3 { grid-area: t1h3; }
+.t1h4 { grid-area: t1h4; }
+.t1h5 { grid-area: t1h5; }
+.t1h6 { grid-area: t1h6; }
+.t1h7 { grid-area: t1h7; }
+
+.r1c1 { grid-area: r1c1; }
+.r1c2 { grid-area: r1c2; }
+.r1c3 { grid-area: r1c3; }
+.r1c4 { grid-area: r1c4; }
+.r1c5 { grid-area: r1c5; }
+.r1c6 { grid-area: r1c6; }
+.r1c7 { grid-area: r1c7; }
+
+.r2c1 { grid-area: r2c1; }
+.r2c2 { grid-area: r2c2; }
+.r2c3 { grid-area: r2c3; }
+.r2c4 { grid-area: r2c4; }
+.r2c5 { grid-area: r2c5; }
+.r2c6 { grid-area: r2c6; }
+.r2c7 { grid-area: r2c7; }
+
+.r3c1 { grid-area: r3c1; }
+.r3c2 { grid-area: r3c2; }
+.r3c3 { grid-area: r3c3; }
+.r3c4 { grid-area: r3c4; }
+.r3c5 { grid-area: r3c5; }
+.r3c6 { grid-area: r3c6; }
+.r3c7 { grid-area: r3c7; }
+
+.r4 { grid-area: blankrow1; }
+
+.r5c1 { grid-area: r5c1; }
+.r5c2 { grid-area: r5c2; }
+.r5c3 { grid-area: r5c3; }
+.r5c4 { grid-area: r5c4; }
+.r5c5 { grid-area: r5c5; }
+.r5c6 { grid-area: r5c6; }
+.r5c7 { grid-area: r5c7; }
+
+.r6c1 { grid-area: r6c1; }
+.r6c2 { grid-area: r6c2; }
+.r6c3 { grid-area: r6c3; }
+.r6c4 { grid-area: r6c4; }
+.r6c5 { grid-area: r6c5; }
+.r6c6 { grid-area: r6c6; }
+.r6c7 { grid-area: r6c7; }
+
+.r7c1 { grid-area: r7c1; }
+.r7c2 { grid-area: r7c2; }
+.r7c3 { grid-area: r7c3; }
+.r7c4 { grid-area: r7c4; }
+.r7c5 { grid-area: r7c5; }
+.r7c6 { grid-area: r7c6; }
+.r7c7 { grid-area: r7c7; }
+
+.r8c1 { grid-area: r8c1; }
+.r8c2 { grid-area: r8c2; }
+.r8c3 { grid-area: r8c3; }
+.r8c4 { grid-area: r8c4; }
+.r8c5 { grid-area: r8c5; }
+.r8c6 { grid-area: r8c6; }
+.r8c7 { grid-area: r8c7; }
+
+.r9 { grid-area: blankrow2; }
+
+.r10c1 { grid-area: r10c1; }
+.r10c2 { grid-area: r10c2; }
+.r10c3 { grid-area: r10c3; }
+.r10c4 { grid-area: r10c4; }
+.r10c5 { grid-area: r10c5; }
+.r10c6 { grid-area: r10c6; }
+.r10c7 { grid-area: r10c7; }
+
+.r11c1 { grid-area: r11c1; }
+.r11c2 { grid-area: r11c2; }
+.r11c3 { grid-area: r11c3; }
+.r11c4 { grid-area: r11c4; }
+.r11c5 { grid-area: r11c5; }
+.r11c6 { grid-area: r11c6; }
+.r11c7 { grid-area: r11c7; }
+
+.r12c1 { grid-area: r12c1; }
+.r12c2 { grid-area: r12c2; }
+.r12c3 { grid-area: r12c3; }
+.r12c4 { grid-area: r12c4; }
+.r12c5 { grid-area: r12c5; }
+.r12c6 { grid-area: r12c6; }
+.r12c7 { grid-area: r12c7; }
+
+.h2 { grid-area: loadheading; }
+
+.t2h1 { grid-area: t2h1; }
+.t2h2 { grid-area: t2h2; }
+.t2h3 { grid-area: t2h3; }
+.t2h4 { grid-area: t2h4; }
+.t2h5 { grid-area: t2h5; }
+.t2h6 { grid-area: t2h6; }
+.t2h7 { grid-area: t2h7; }
+
+.x1c1 { grid-area: x1c1; }
+.x1c2 { grid-area: x1c2; }
+.x1c3 { grid-area: x1c3; }
+.x1c4 { grid-area: x1c4; }
+.x1c5 { grid-area: x1c5; }
+.x1c6 { grid-area: x1c6; }
+.x1c7 { grid-area: x1c7; }
+
+.x2c1 { grid-area: x2c1; }
+.x2c2 { grid-area: x2c2; }
+.x2c3 { grid-area: x2c3; }
+.x2c4 { grid-area: x2c4; }
+.x2c5 { grid-area: x2c5; }
+.x2c6 { grid-area: x2c6; }
+.x2c7 { grid-area: x2c7; }
+
+.x3c1 { grid-area: x3c1; }
+.x3c2 { grid-area: x3c2; }
+.x3c3 { grid-area: x3c3; }
+.x3c4 { grid-area: x3c4; }
+.x3c5 { grid-area: x3c5; }
+.x3c6 { grid-area: x3c6; }
+.x3c7 { grid-area: x3c7; }
+
+.x4c1 { grid-area: x4c1; }
+.x4c2 { grid-area: x4c2; }
+.x4c3 { grid-area: x4c3; }
+.x4c4 { grid-area: x4c4; }
+.x4c5 { grid-area: x4c5; }
+.x4c6 { grid-area: x4c6; }
+.x4c7 { grid-area: x4c7; }
+
+.x5c1 { grid-area: x5c1; }
+.x5c2 { grid-area: x5c2; }
+.x5c3 { grid-area: x5c3; }
+.x5c4 { grid-area: x5c4; }
+.x5c5 { grid-area: x5c5; }
+.x5c6 { grid-area: x5c6; }
+.x5c7 { grid-area: x5c7; }
+
+.x6c1 { grid-area: x6c1; }
+.x6c2 { grid-area: x6c2; }
+.x6c3 { grid-area: x6c3; }
+.x6c4 { grid-area: x6c4; }
+.x6c5 { grid-area: x6c5; }
+.x6c6 { grid-area: x6c6; }
+.x6c7 { grid-area: x6c7; }
+
+.x7c1 { grid-area: x7c1; }
+.x7c2 { grid-area: x7c2; }
+.x7c3 { grid-area: x7c3; }
+.x7c4 { grid-area: x7c4; }
+.x7c5 { grid-area: x7c5; }
+.x7c6 { grid-area: x7c6; }
+.x7c7 { grid-area: x7c7; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'scheduleheading scheduleheading scheduleheading scheduleheading scheduleheading scheduleheading scheduleheading'
+	't1h1 t1h2 t1h3 t1h4 t1h5 t1h6 t1h7'
+	'r1c1 r1c2 r1c3 r1c4 r1c5 r1c6 r1c7'
+	'r2c1 r2c2 r2c3 r2c4 r2c5 r2c6 r2c7'
+	'r3c1 r3c2 r3c3 r3c4 r3c5 r3c6 r3c7'
+	'blankrow1 blankrow1 blankrow1 blankrow1 blankrow1 blankrow1 blankrow1'
+	'r5c1 r5c2 r5c3 r5c4 r5c5 r5c6 r5c7'	
+	'r6c1 r6c2 r6c3 r6c4 r6c5 r6c6 r6c7'
+	'r7c1 r7c2 r7c3 r7c4 r7c5 r7c6 r7c7'
+	'r8c1 r8c2 r8c3 r8c4 r8c5 r8c6 r8c7'
+	'blankrow2 blankrow2 blankrow2 blankrow2 blankrow2 blankrow2 blankrow2'
+	'r10c1 r10c2 r10c3 r10c4 r10c5 r10c6 r10c7'
+	'r11c1 r11c2 r11c3 r11c4 r11c5 r11c6 r11c7'	
+	'r12c1 r12c2 r12c3 r12c4 r12c5 r12c6 r12c7'
+	'loadheading loadheading loadheading loadheading loadheading loadheading loadheading'
+	't2h1 t2h2 t2h3 t2h4 t2h5 t2h6 t2h7'
+	'x1c1 x1c2 x1c3 x1c4 x1c5 x1c6 x1c7'
+	'x2c1 x2c2 x2c3 x2c4 x2c5 x2c6 x2c7'
+	'x3c1 x3c2 x3c3 x3c4 x3c5 x3c6 x3c7'	
+	'x4c1 x4c2 x4c3 x4c4 x4c5 x4c6 x4c7'
+	'x5c1 x5c2 x5c3 x5c4 x5c5 x5c6 x5c7'	
+	'x6c1 x6c2 x6c3 x6c4 x6c5 x6c6 x6c7'
+	'x7c1 x7c2 x7c3 x7c4 x7c5 x7c6 x7c7'
+}
 
 
 
