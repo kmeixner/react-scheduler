@@ -37,6 +37,7 @@
   },
   "proxy": "http://localhost:5000/",
   "devDependencies": {
-    "@types/react-select": "^4.0.13"
+    "@types/react-select": "^4.0.13",
+    "redux": "^4.0.5"
   }
 }
