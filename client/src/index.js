@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { connect } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -256,6 +257,11 @@ const mapDispatchToProps = (dispatch) => {
     }
   }
 };
+
+//const Provider = ReactRedux.Provider; // unnecessary , Provider already imported
+//const connect = ReactRedux.connect; // unnecessary , connect already imported
+
+const Container = connect(mapStateToProps,mapDispatchToProps)(App);
 
 // END REDUX (except for <Provider> tag below)
 
