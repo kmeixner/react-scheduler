@@ -195,69 +195,26 @@ const mapStateToProps = (state) => {
 		return iNumWeeklyShifts;
 	}
 	
-	aInfo['X1'] = [{monday:null},{tuesday:null},{wednesday:null},{thursday:null},{friday:null}];
-	aInfo['X2'] = [{monday:null},{tuesday:null},{wednesday:null},{thursday:null},{friday:null}];
-	aInfo['X3'] = [{monday:null},{tuesday:null},{wednesday:null},{thursday:null},{friday:null}];
-	aInfo['X4'] = [{monday:null},{tuesday:null},{wednesday:null},{thursday:null},{friday:null}];
-	aInfo['X5'] = [{monday:null},{tuesday:null},{wednesday:null},{thursday:null},{friday:null}];
-	aInfo['X6'] = [{monday:null},{tuesday:null},{wednesday:null},{thursday:null},{friday:null}];
-	aInfo['X7'] = [{monday:null},{tuesday:null},{wednesday:null},{thursday:null},{friday:null}];	
-	
-	aInfo['X1']['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'X1', 'monday');
-	aInfo['X1']['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'X1', 'tueday');
-	aInfo['X1']['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'X1', 'wednesday');		
-	aInfo['X1']['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'X1', 'thursday');
-	aInfo['X1']['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'X1', 'friday');
-	aInfo['X1']['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek('X1', aInfo);
-	aInfo['X1']['tooManyWeeklyShifts'] = (aInfo['X1']['numWeeklyShifts'] > 7) ? true : false;
-	
-	aInfo['X2']['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'X2', 'monday');
-	aInfo['X2']['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'X2', 'tueday');
-	aInfo['X2']['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'X2', 'wednesday');		
-	aInfo['X2']['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'X2', 'thursday');
-	aInfo['X2']['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'X2', 'friday');
-	aInfo['X2']['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek('X2', aInfo);
-	aInfo['X2']['tooManyWeeklyShifts'] = (aInfo['X2']['numWeeklyShifts'] > 7) ? true : false;	
-	
-	aInfo['X3']['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'X3', 'monday');
-	aInfo['X3']['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'X3', 'tueday');
-	aInfo['X3']['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'X3', 'wednesday');		
-	aInfo['X3']['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'X3', 'thursday');
-	aInfo['X3']['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'X3', 'friday');
-	aInfo['X3']['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek('X3', aInfo);
-	aInfo['X3']['tooManyWeeklyShifts'] = (aInfo['X3']['numWeeklyShifts'] > 7) ? true : false;	
-	
-	aInfo['X4']['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'X4', 'monday');
-	aInfo['X4']['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'X4', 'tueday');
-	aInfo['X4']['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'X4', 'wednesday');		
-	aInfo['X4']['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'X4', 'thursday');
-	aInfo['X4']['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'X4', 'friday');
-	aInfo['X4']['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek('X4', aInfo);
-	aInfo['X4']['tooManyWeeklyShifts'] = (aInfo['X4']['numWeeklyShifts'] > 7) ? true : false;	
-	
-	aInfo['X5']['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'X5', 'monday');
-	aInfo['X5']['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'X5', 'tueday');
-	aInfo['X5']['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'X5', 'wednesday');		
-	aInfo['X5']['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'X5', 'thursday');
-	aInfo['X5']['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'X5', 'friday');
-	aInfo['X5']['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek('X5', aInfo);
-	aInfo['X5']['tooManyWeeklyShifts'] = (aInfo['X5']['numWeeklyShifts'] > 7) ? true : false;	
-	
-	aInfo['X6']['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'X6', 'monday');
-	aInfo['X6']['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'X6', 'tueday');
-	aInfo['X6']['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'X6', 'wednesday');		
-	aInfo['X6']['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'X6', 'thursday');
-	aInfo['X6']['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'X6', 'friday');
-	aInfo['X6']['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek('X6', aInfo);
-	aInfo['X6']['tooManyWeeklyShifts'] = (aInfo['X6']['numWeeklyShifts'] > 7) ? true : false;	
-	
-	aInfo['X7']['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'X7', 'monday');
-	aInfo['X7']['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'X7', 'tueday');
-	aInfo['X7']['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'X7', 'wednesday');		
-	aInfo['X7']['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'X7', 'thursday');
-	aInfo['X7']['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'X7', 'friday');
-	aInfo['X7']['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek('X7', aInfo);
-	aInfo['X7']['tooManyWeeklyShifts'] = (aInfo['X7']['numWeeklyShifts'] > 7) ? true : false;	
+	for (var i=1; i<=7; i++) {
+		
+		let sEmp = 'X'+i; // X1..X7
+		
+		aInfo[sEmp] = {
+			monday:null,
+			tuesday:null,
+			wednesday:null,
+			thursday:null,
+			friday:null
+		};
+		
+		aInfo[sEmp]['monday'] 		= getNumShiftsForEmployeeAndDay(state, sEmp, 'monday');
+		aInfo[sEmp]['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, sEmp, 'tueday');
+		aInfo[sEmp]['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, sEmp, 'wednesday');		
+		aInfo[sEmp]['thursday'] 	= getNumShiftsForEmployeeAndDay(state, sEmp, 'thursday');
+		aInfo[sEmp]['friday'] 		= getNumShiftsForEmployeeAndDay(state, sEmp, 'friday');
+		aInfo[sEmp]['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek(sEmp, aInfo);
+		aInfo[sEmp]['tooManyWeeklyShifts'] = (aInfo[sEmp]['numWeeklyShifts'] > 7) ? true : false;		
+	}	
 	
 	return {allShiftInfo: aInfo};
 }
