@@ -138,59 +138,59 @@ class App extends Component {
 			
 			<div className="x1c1 leftheading">X1</div>
 			<ShiftLoadForDay className="x1c2" dailyload={this.props.allShiftInfo['X1']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x1c3" dailyload={this.props.allShiftInfo['X1']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x1c4" dailyload={this.props.allShiftInfo['X1']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x1c5" dailyload={this.props.allShiftInfo['X1']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x1c6" dailyload={this.props.allShiftInfo['X1']['monday'].numShiftsForDay} />
-			<ShiftLoadForWeek className="x1c7" />
+			<ShiftLoadForDay className="x1c3" dailyload={this.props.allShiftInfo['X1']['tuesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x1c4" dailyload={this.props.allShiftInfo['X1']['wednesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x1c5" dailyload={this.props.allShiftInfo['X1']['thursday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x1c6" dailyload={this.props.allShiftInfo['X1']['friday'].numShiftsForDay} />
+			<ShiftLoadForWeek className="x1c7" weeklyload={this.props.allShiftInfo['X1'].numWeeklyShifts} />
 			
 			<div className="x2c1 leftheading">X2</div>
 			<ShiftLoadForDay className="x2c2" dailyload={this.props.allShiftInfo['X2']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x2c3" dailyload={this.props.allShiftInfo['X2']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x2c4" dailyload={this.props.allShiftInfo['X2']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x2c5" dailyload={this.props.allShiftInfo['X2']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x2c6" dailyload={this.props.allShiftInfo['X2']['monday'].numShiftsForDay} />
-			<ShiftLoadForWeek className="x2c7" />
+			<ShiftLoadForDay className="x2c3" dailyload={this.props.allShiftInfo['X2']['tuesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x2c4" dailyload={this.props.allShiftInfo['X2']['wednesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x2c5" dailyload={this.props.allShiftInfo['X2']['thursday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x2c6" dailyload={this.props.allShiftInfo['X2']['friday'].numShiftsForDay} />
+			<ShiftLoadForWeek className="x2c7" weeklyload={this.props.allShiftInfo['X2'].numWeeklyShifts} />
 
 			<div className="x3c1 leftheading">X3</div>
 			<ShiftLoadForDay className="x3c2" dailyload={this.props.allShiftInfo['X3']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x3c3" dailyload={this.props.allShiftInfo['X3']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x3c4" dailyload={this.props.allShiftInfo['X3']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x3c5" dailyload={this.props.allShiftInfo['X3']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x3c6" dailyload={this.props.allShiftInfo['X3']['monday'].numShiftsForDay} />
-			<ShiftLoadForWeek className="x3c7" />
+			<ShiftLoadForDay className="x3c3" dailyload={this.props.allShiftInfo['X3']['tuesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x3c4" dailyload={this.props.allShiftInfo['X3']['wednesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x3c5" dailyload={this.props.allShiftInfo['X3']['thursday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x3c6" dailyload={this.props.allShiftInfo['X3']['friday'].numShiftsForDay} />
+			<ShiftLoadForWeek className="x3c7" weeklyload={this.props.allShiftInfo['X3'].numWeeklyShifts} />
 
 			<div className="x4c1 leftheading">X4</div>
 			<ShiftLoadForDay className="x4c2" dailyload={this.props.allShiftInfo['X4']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x4c3" dailyload={this.props.allShiftInfo['X4']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x4c4" dailyload={this.props.allShiftInfo['X4']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x4c5" dailyload={this.props.allShiftInfo['X4']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x4c6" dailyload={this.props.allShiftInfo['X4']['monday'].numShiftsForDay} />
-			<ShiftLoadForWeek className="x4c7" />
+			<ShiftLoadForDay className="x4c3" dailyload={this.props.allShiftInfo['X4']['tuesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x4c4" dailyload={this.props.allShiftInfo['X4']['wednesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x4c5" dailyload={this.props.allShiftInfo['X4']['thursday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x4c6" dailyload={this.props.allShiftInfo['X4']['friday'].numShiftsForDay} />
+			<ShiftLoadForWeek className="x4c7" weeklyload={this.props.allShiftInfo['X4'].numWeeklyShifts} />
 
 			<div className="x5c1 leftheading">X5</div>
 			<ShiftLoadForDay className="x5c2" dailyload={this.props.allShiftInfo['X5']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x5c3" dailyload={this.props.allShiftInfo['X5']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x5c4" dailyload={this.props.allShiftInfo['X5']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x5c5" dailyload={this.props.allShiftInfo['X5']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x5c6" dailyload={this.props.allShiftInfo['X5']['monday'].numShiftsForDay} />
-			<ShiftLoadForWeek className="x5c7" />
+			<ShiftLoadForDay className="x5c3" dailyload={this.props.allShiftInfo['X5']['tuesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x5c4" dailyload={this.props.allShiftInfo['X5']['wednesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x5c5" dailyload={this.props.allShiftInfo['X5']['thursday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x5c6" dailyload={this.props.allShiftInfo['X5']['friday'].numShiftsForDay} />
+			<ShiftLoadForWeek className="x5c7" weeklyload={this.props.allShiftInfo['X5'].numWeeklyShifts} />
 
 			<div className="x6c1 leftheading">X6</div>
 			<ShiftLoadForDay className="x6c2" dailyload={this.props.allShiftInfo['X6']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x6c3" dailyload={this.props.allShiftInfo['X6']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x6c4" dailyload={this.props.allShiftInfo['X6']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x6c5" dailyload={this.props.allShiftInfo['X6']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x6c6" dailyload={this.props.allShiftInfo['X6']['monday'].numShiftsForDay} />
-			<ShiftLoadForWeek className="x6c7" />
+			<ShiftLoadForDay className="x6c3" dailyload={this.props.allShiftInfo['X6']['tuesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x6c4" dailyload={this.props.allShiftInfo['X6']['wednesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x6c5" dailyload={this.props.allShiftInfo['X6']['thursday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x6c6" dailyload={this.props.allShiftInfo['X6']['friday'].numShiftsForDay} />
+			<ShiftLoadForWeek className="x6c7" weeklyload={this.props.allShiftInfo['X6'].numWeeklyShifts} />
 
 			<div className="x7c1 leftheading">X7</div>
 			<ShiftLoadForDay className="x7c2" dailyload={this.props.allShiftInfo['X7']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x7c3" dailyload={this.props.allShiftInfo['X7']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x7c4" dailyload={this.props.allShiftInfo['X7']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x7c5" dailyload={this.props.allShiftInfo['X7']['monday'].numShiftsForDay} />
-			<ShiftLoadForDay className="x7c6" dailyload={this.props.allShiftInfo['X7']['monday'].numShiftsForDay} />
-			<ShiftLoadForWeek className="x7c7" />
+			<ShiftLoadForDay className="x7c3" dailyload={this.props.allShiftInfo['X7']['tuesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x7c4" dailyload={this.props.allShiftInfo['X7']['wednesday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x7c5" dailyload={this.props.allShiftInfo['X7']['thursday'].numShiftsForDay} />
+			<ShiftLoadForDay className="x7c6" dailyload={this.props.allShiftInfo['X7']['friday'].numShiftsForDay} />
+			<ShiftLoadForWeek className="x7c7" weeklyload={this.props.allShiftInfo['X7'].numWeeklyShifts} />
 			
 		</div>
       </div>
