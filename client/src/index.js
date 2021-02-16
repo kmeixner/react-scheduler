@@ -87,90 +87,86 @@ const mapStateToProps = (state) => {
 		let bAfternoonSchedulingConflict = false;
 		let bConsecutiveLunchSlotsScheduled = false;
 		
-		console.log('state: '+state);
-		console.log('weekday: '+weekday);
-		console.log('employee: '+employee);
-		
 		// Determine Shift Totals:
 		
-		// if (employee == state[weekday]['mA']){
-			// iTotalNumShifts++;
-			// iNumMorningShifts++;
-		// }
+		if (employee == state[weekday]['mA']){
+			iTotalNumShifts++;
+			iNumMorningShifts++;
+		}
 		
-		// if (employee == state[weekday]['mB']) {
-			// iTotalNumShifts++;
-			// iNumMorningShifts++;
-		// }
+		if (employee == state[weekday]['mB']) {
+			iTotalNumShifts++;
+			iNumMorningShifts++;
+		}
 		
-		// if (employee == state[weekday]['mC']) {
-			// iTotalNumShifts++;
-			// iNumMorningShifts++;
-		// }
+		if (employee == state[weekday]['mC']) {
+			iTotalNumShifts++;
+			iNumMorningShifts++;
+		}
 		
-		// if (employee == state[weekday]['lA']){
-			// iTotalNumShifts++;
-			// iNumLunchShifts++;
-		// }
+		if (employee == state[weekday]['lA']){
+			iTotalNumShifts++;
+			iNumLunchShifts++;
+		}
 
-		// if (employee == state[weekday]['lB']){
-			// iTotalNumShifts++;
-			// iNumLunchShifts++;
-		// }
+		if (employee == state[weekday]['lB']){
+			iTotalNumShifts++;
+			iNumLunchShifts++;
+		}
 
-		// if (employee == state[weekday]['lC']){
-			// iTotalNumShifts++;
-			// iNumLunchShifts++;
-		// }
+		if (employee == state[weekday]['lC']){
+			iTotalNumShifts++;
+			iNumLunchShifts++;
+		}
 
-		// if (employee == state[weekday]['lD']){
-			// iTotalNumShifts++;
-			// iNumLunchShifts++;
-		// }
+		if (employee == state[weekday]['lD']){
+			iTotalNumShifts++;
+			iNumLunchShifts++;
+		}
 
-		// if (employee == state[weekday]['aA']){
-			// iTotalNumShifts++;
-			// iNumAfternoonShifts++;
-		// }
+		if (employee == state[weekday]['aA']){
+			iTotalNumShifts++;
+			iNumAfternoonShifts++;
+		}
 
-		// if (employee == state[weekday]['aB']){
-			// iTotalNumShifts++;
-			// iNumAfternoonShifts++;
-		// }
+		if (employee == state[weekday]['aB']){
+			iTotalNumShifts++;
+			iNumAfternoonShifts++;
+		}
 
-		// if (employee == state[weekday]['aC']){
-			// iTotalNumShifts++;
-			// iNumAfternoonShifts++;
-		// }
+		if (employee == state[weekday]['aC']){
+			iTotalNumShifts++;
+			iNumAfternoonShifts++;
+		}
 		
-		// // Check rules aren't broken:
+		// Check rules aren't broken:
 		
-		// if (iTotalNumShifts > 2) {
-			// bTooManyShiftsForDay = true;
-		// }
+		if (iTotalNumShifts > 2) {
+			bTooManyShiftsForDay = true;
+		}
 		
-		// if (iNumMorningShifts > 1) {
-			// bMorningSchedulingConflict = true;
-		// }
+		if (iNumMorningShifts > 1) {
+			bMorningSchedulingConflict = true;
+		}
 		
-		// if (iNumMorningShifts > 1) {
-			// bAfternoonSchedulingConflict = true;
-		// }
+		if (iNumMorningShifts > 1) {
+			bAfternoonSchedulingConflict = true;
+		}
 
-		// if (iNumLunchShifts > 1) { // disallow consequtive lunch slots
+		if (iNumLunchShifts > 1) { // disallow consequtive lunch slots
 			
-			// if (
-				// employee == state[weekday]['lA'] && employee == state[weekday]['lB']
-				// ||
-				// employee == state[weekday]['lB'] && employee == state[weekday]['lC']
-				// ||
-				// employee == state[weekday]['lC'] && employee == state[weekday]['lD']
-			   // )
-			 // {
-				 // bConsecutiveLunchSlotsScheduled = true;
-			 // }
+			if (
+				employee == state[weekday]['lA'] && employee == state[weekday]['lB']
+				||
+				employee == state[weekday]['lB'] && employee == state[weekday]['lC']
+				||
+				employee == state[weekday]['lC'] && employee == state[weekday]['lD']
+			   )
+			 {
+				 bConsecutiveLunchSlotsScheduled = true;
+			 }
 			
-		// }
+		}
 		
 		return {
 			numShiftsForDay: iTotalNumShifts,
