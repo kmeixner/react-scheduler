@@ -12,6 +12,7 @@ import reportWebVitals from './reportWebVitals';
 const CHANGE_SHIFT = 'CHANGE_SHIFT';
 
 const changeShift = (employee, weekday, shift) => {
+  console.log("changeShift() called"); // debug
   return {
     type: CHANGE_SHIFT,
     employee: employee,
@@ -210,7 +211,7 @@ const mapStateToProps = (state) => {
 		aInfo[sEmp]['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'friday', sEmp);
 		aInfo[sEmp]['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek(sEmp, aInfo);
 		aInfo[sEmp]['tooManyWeeklyShifts'] = (aInfo[sEmp]['numWeeklyShifts'] > 7) ? true : false;		
-	}	
+	}
 	
 	return {allShiftInfo: aInfo};
 }
