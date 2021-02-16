@@ -207,11 +207,11 @@ const mapStateToProps = (state) => {
 			friday:null
 		};
 		
-		aInfo[sEmp]['monday'] 		= getNumShiftsForEmployeeAndDay(state, sEmp, 'monday');
-		aInfo[sEmp]['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, sEmp, 'tueday');
-		aInfo[sEmp]['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, sEmp, 'wednesday');		
-		aInfo[sEmp]['thursday'] 	= getNumShiftsForEmployeeAndDay(state, sEmp, 'thursday');
-		aInfo[sEmp]['friday'] 		= getNumShiftsForEmployeeAndDay(state, sEmp, 'friday');
+		aInfo[sEmp]['monday'] 		= getNumShiftsForEmployeeAndDay(state, 'monday', sEmp);
+		aInfo[sEmp]['tuesday'] 		= getNumShiftsForEmployeeAndDay(state, 'tuesday', sEmp);
+		aInfo[sEmp]['wednesday'] 	= getNumShiftsForEmployeeAndDay(state, 'wednesday', sEmp);		
+		aInfo[sEmp]['thursday'] 	= getNumShiftsForEmployeeAndDay(state, 'thursday', sEmp);
+		aInfo[sEmp]['friday'] 		= getNumShiftsForEmployeeAndDay(state, 'friday', sEmp);
 		aInfo[sEmp]['numWeeklyShifts'] = getNumShiftsForEmployeeAndWeek(sEmp, aInfo);
 		aInfo[sEmp]['tooManyWeeklyShifts'] = (aInfo[sEmp]['numWeeklyShifts'] > 7) ? true : false;		
 	}	
