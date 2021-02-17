@@ -5,8 +5,6 @@
 
 #How to use:
 
-* Step 1: run "node server.js" from the root directory of the application
-* Step 2: run "npm start" from the 'client/src' directory of the application
-
+* Ensure that you have NodeJS installed on your environment
 * Step 1: run "node server.js" from the root directory of the application
 * Step 2: run "npm start" from the 'client/src' directory of the application
