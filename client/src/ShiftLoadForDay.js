@@ -11,8 +11,6 @@ class ShiftLoadForDay extends React.Component {
 		let bHasErrors = false;
 		let sErrorMessages = "";
 		
-		console.log(this.props.data); // debug
-		
 		if (this.props.data.morningSchedulingConflict) {
 			bHasErrors = true;
 			sErrorMessages = ", Morning scheduling conflict";
@@ -32,8 +30,6 @@ class ShiftLoadForDay extends React.Component {
 			bHasErrors = true;
 			sErrorMessages += ", Consecutive Lunches scheduled";
 		}
-		
-		console.log(bHasErrors); // debug
 
 		if (!bHasErrors) {
 			return <div>{this.props.data.numShiftsForDay}</div>;
