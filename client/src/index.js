@@ -20,7 +20,7 @@ const changeShift = (employee, weekday, shift) => {
   }
 };
 
-const defaultShiftState = {
+const DEFAULT_SHIFT_STATE = {
 	monday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'},
 	tuesday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'},
 	wednesday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'},	
@@ -28,7 +28,7 @@ const defaultShiftState = {
 	friday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'}
 };
 
-const myReducer = function (previousState = defaultShiftState, action) {
+const myReducer = function (previousState = DEFAULT_SHIFT_STATE, action) {
 	switch (action.type) {
 		case CHANGE_SHIFT:
 			// *!* don't alter original previousState object since states must be immuntable in Redux *!*:
