@@ -150,7 +150,7 @@ const mapStateToProps = (state) => {
 			bMorningSchedulingConflict = true;
 		}
 		
-		if (iNumMorningShifts > 1) {
+		if (iNumAfternoonShifts > 1) {
 			bAfternoonSchedulingConflict = true;
 		}
 
