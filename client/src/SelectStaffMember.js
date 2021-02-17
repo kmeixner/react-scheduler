@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Select from 'react-select';
 
 const options = [
-  { value: 'none', label: 'None' },
+  { value: 'None', label: 'None' },
   { value: 'X1', label: 'X1' },
   { value: 'X2', label: 'X2' },
   { value: 'X3', label: 'X3' },
