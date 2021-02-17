@@ -21,6 +21,7 @@ class SelectStaffMember extends React.Component {
   
   handleChange = (event) => {
 	this.setState({employee: event.value});
+	this.props.callback(event.value, this.props.weekday, this.props.shift);	
   }
 	
   render() {
