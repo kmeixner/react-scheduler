@@ -40,10 +40,9 @@ class ShiftLoadForDay extends React.Component {
 		}
 		else {
 			sErrorMessages = sErrorMessages.substr(2); // remove ', '
-			return <div>YOU GOT PROBLEM!</div>;			
+			return <div className="error" title={sErrorMessages}>{this.props.data.numShiftsForDay}</div>;			
 		}
 	}
 }
-//ShiftLoadForDay.defaultProps = {dailyload:0};
 
 export default ShiftLoadForDay;

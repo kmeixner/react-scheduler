@@ -7,9 +7,13 @@ class ShiftLoadForWeek extends React.Component {
   }
 	
   render() {
-    return <div>{this.props.weeklyload}</div>;
+	if (this.props.weeklyload <=7) {
+		return <div>{this.props.weeklyload}</div>;
+	}
+	else {
+		return <div className="error" title="Too many weekly shifts scheduled.">{this.props.weeklyload}</div>;		
+	}
   }
 }
-ShiftLoadForWeek.defaultProps = {weeklyload:0};
 
 export default ShiftLoadForWeek;
