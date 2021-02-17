@@ -10,6 +10,11 @@
 	text-align: left;
 }
 
+.error {
+	color: red;
+	font-weight: bold;
+}
+
 .h1 { grid-area: scheduleheading; }
 
 .t1h1 { grid-area: t1h1; }
