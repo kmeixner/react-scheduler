@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import SelectStaffMember from './SelectStaffMember';
 import ShiftLoadForDay from './ShiftLoadForDay';
 import ShiftLoadForWeek from './ShiftLoadForWeek';
-import DisplayError from './DisplayError';
 import './App.css';
 
 class App extends Component {
