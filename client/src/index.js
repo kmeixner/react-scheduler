@@ -30,6 +30,7 @@ const defaultShiftState = {
 };
 
 const myReducer = function (previousState = defaultShiftState, action) {
+	console.log('myReducer called, action.type: '+ action.type);
 	switch (action.type) {
 		case CHANGE_SHIFT:
 			// *!* don't alter original previousState object since states must be immuntable in Redux *!*:
@@ -45,7 +46,8 @@ const myReducer = function (previousState = defaultShiftState, action) {
 					switch (action.shift) {
 						case 'mA':case 'mB':case 'mC':case 'lA':case 'lB':case 'lC':case 'lD':case 'aA':case 'aB':case 'aC':
 							switch (action.employee) {
-								case 'None':case 'x1':case 'x2':case 'x3':case 'x4':case 'x5':case 'x5':case 'x7':
+								case 'None':case 'X1':case 'X2':case 'X3':case 'X4':case 'X5':case 'X5':case 'X7':
+									break;
 								default:
 									console.log('ERR: Recieved unsupported employee: '+action.employee);
 									return previousState; // error unsupported employee
