@@ -20,17 +20,17 @@ class ShiftLoadForDay extends React.Component {
 		
 		if (this.props.data.afternoonSchedulingConflict) {
 			bHasErrors = true;
-			sErrorMessages = ", Afternoon scheduling conflict";
+			sErrorMessages += ", Afternoon scheduling conflict";
 		}		
 		
 		if (this.props.data.tooManyShiftsForDay) {
 			bHasErrors = true;
-			sErrorMessages = ", Too many daily shifts scheduled";
+			sErrorMessages += ", Too many daily shifts scheduled";
 		}
 		
 		if (this.props.data.consecutiveLunchSlotsScheduled) {
 			bHasErrors = true;
-			sErrorMessages = ", Consecutive Lunches scheduled";
+			sErrorMessages += ", Consecutive Lunches scheduled";
 		}
 		
 		console.log(bHasErrors); // debug
