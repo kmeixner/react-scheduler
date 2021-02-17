@@ -27,7 +27,8 @@ class App extends Component {
 	
     return (
       <div className="App">
-		<div className="grid-container">
+	  
+		<div className="grid-container">{/* Start Visible Table */}
 		
 			<div className="h1 heading">Schedule</div>
 			
@@ -189,7 +190,10 @@ class App extends Component {
 			<ShiftLoadForDay className="x7c6" data={this.props.allShiftInfo['X7']['friday']} />
 			<ShiftLoadForWeek className="x7c7" weeklyload={this.props.allShiftInfo['X7'].numWeeklyShifts} />
 			
-		</div>
+		</div>{/* End Visible Table */}
+		
+		<p className="errorCaptionNote"><strong>*Note:</strong> Hover over items displayed in red for explanation of error.</p>		
+		
       </div>
     );
   }
