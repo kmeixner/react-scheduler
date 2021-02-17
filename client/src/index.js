@@ -29,7 +29,6 @@ const defaultShiftState = {
 };
 
 const myReducer = function (previousState = defaultShiftState, action) {
-	console.log('myReducer called, action.type: '+ action.type);
 	switch (action.type) {
 		case CHANGE_SHIFT:
 			// *!* don't alter original previousState object since states must be immuntable in Redux *!*:
