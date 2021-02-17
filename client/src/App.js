@@ -24,6 +24,7 @@ class App extends Component {
   };
 
   render() {
+	console.log('IM TEH APP!!');
 	console.log(this.props); // debug
     return (
       <div className="App">
@@ -40,87 +41,87 @@ class App extends Component {
 			<div className="t1h7">&nbsp;</div>
 			
 			<div className="r1c1 leftheading">Morning Up stairs</div>
-			<SelectStaffMember className="r1c2" />
-			<SelectStaffMember className="r1c3" />
-			<SelectStaffMember className="r1c4" />
-			<SelectStaffMember className="r1c5" />
-			<SelectStaffMember className="r1c6" />
+			<SelectStaffMember className="r1c2" callback={this.props.submitChangeShift} shift={"mA"} weekday={'monday'} />
+			<SelectStaffMember className="r1c3" callback={this.props.submitChangeShift} shift={"mA"} weekday={'tuesday'} />
+			<SelectStaffMember className="r1c4" callback={this.props.submitChangeShift} shift={"mA"} weekday={'wednesday'} />
+			<SelectStaffMember className="r1c5" callback={this.props.submitChangeShift} shift={"mA"} weekday={'thursday'} />
+			<SelectStaffMember className="r1c6" callback={this.props.submitChangeShift} shift={"mA"} weekday={'friday'} />
 			<div className="r1c7">&nbsp;</div>
 			
 			<div className="r2c1 leftheading">Morning Down tairs</div>
-			<SelectStaffMember className="r2c2" />
-			<SelectStaffMember className="r2c3" />
-			<SelectStaffMember className="r2c4" />
-			<SelectStaffMember className="r2c5" />
-			<SelectStaffMember className="r2c6" />
+			<SelectStaffMember className="r2c2" callback={this.props.submitChangeShift} shift={"mB"} weekday={'monday'} />
+			<SelectStaffMember className="r2c3" callback={this.props.submitChangeShift} shift={"mB"} weekday={'tuesday'} />
+			<SelectStaffMember className="r2c4" callback={this.props.submitChangeShift} shift={"mB"} weekday={'wednesday'} />
+			<SelectStaffMember className="r2c5" callback={this.props.submitChangeShift} shift={"mB"} weekday={'thursday'} />
+			<SelectStaffMember className="r2c6" callback={this.props.submitChangeShift} shift={"mB"} weekday={'friday'} />
 			<div className="r2c7">&nbsp;</div>
 			
 			<div className="r3c1 leftheading">Morning Parking Lot</div>
-			<SelectStaffMember className="r3c2" />
-			<SelectStaffMember className="r3c3" />
-			<SelectStaffMember className="r3c4" />
-			<SelectStaffMember className="r3c5" />
-			<SelectStaffMember className="r3c6" />
+			<SelectStaffMember className="r3c2" callback={this.props.submitChangeShift} shift={"mC"} weekday={'monday'} />
+			<SelectStaffMember className="r3c3" callback={this.props.submitChangeShift} shift={"mC"} weekday={'tuesday'} />
+			<SelectStaffMember className="r3c4" callback={this.props.submitChangeShift} shift={"mC"} weekday={'wednesday'} />
+			<SelectStaffMember className="r3c5" callback={this.props.submitChangeShift} shift={"mC"} weekday={'thursday'} />
+			<SelectStaffMember className="r3c6" callback={this.props.submitChangeShift} shift={"mC"} weekday={'friday'} />
 			<div className="r3c7">&nbsp;</div>
 
 			<div className="r4">&nbsp;</div>
 			
 			<div className="r5c1 leftheading">Lunch A</div>
-			<SelectStaffMember className="r5c2" />
-			<SelectStaffMember className="r5c3" />
-			<SelectStaffMember className="r5c4" />
-			<SelectStaffMember className="r5c5" />
-			<SelectStaffMember className="r5c6" />
+			<SelectStaffMember className="r5c2" callback={this.props.submitChangeShift} shift={"lA"} weekday={'monday'} />
+			<SelectStaffMember className="r5c3" callback={this.props.submitChangeShift} shift={"lA"} weekday={'tuesday'} />
+			<SelectStaffMember className="r5c4" callback={this.props.submitChangeShift} shift={"lA"} weekday={'wednesday'} />
+			<SelectStaffMember className="r5c5" callback={this.props.submitChangeShift} shift={"lA"} weekday={'thursday'} />
+			<SelectStaffMember className="r5c6" callback={this.props.submitChangeShift} shift={"lA"} weekday={'friday'} />
 			<div className="r5c7">&nbsp;</div>
 			
 			<div className="r6c1 leftheading">Lunch B</div>
-			<SelectStaffMember className="r6c2" />
-			<SelectStaffMember className="r6c3" />
-			<SelectStaffMember className="r6c4" />
-			<SelectStaffMember className="r6c5" />
-			<SelectStaffMember className="r6c6" />
+			<SelectStaffMember className="r6c2" callback={this.props.submitChangeShift} shift={"lB"} weekday={'monday'} />
+			<SelectStaffMember className="r6c3" callback={this.props.submitChangeShift} shift={"lB"} weekday={'tuesday'} />
+			<SelectStaffMember className="r6c4" callback={this.props.submitChangeShift} shift={"lB"} weekday={'wednesday'} />
+			<SelectStaffMember className="r6c5" callback={this.props.submitChangeShift} shift={"lB"} weekday={'thursday'} />
+			<SelectStaffMember className="r6c6" callback={this.props.submitChangeShift} shift={"lB"} weekday={'friday'} />
 			<div className="r6c7">&nbsp;</div>
 			
 			<div className="r7c1 leftheading">Lunch C</div>
-			<SelectStaffMember className="r7c2" />
-			<SelectStaffMember className="r7c3" />
-			<SelectStaffMember className="r7c4" />
-			<SelectStaffMember className="r7c5" />
-			<SelectStaffMember className="r7c6" />
+			<SelectStaffMember className="r7c2" callback={this.props.submitChangeShift} shift={"lC"} weekday={'monday'} />
+			<SelectStaffMember className="r7c3" callback={this.props.submitChangeShift} shift={"lC"} weekday={'tuesday'} />
+			<SelectStaffMember className="r7c4" callback={this.props.submitChangeShift} shift={"lC"} weekday={'wednesday'} />
+			<SelectStaffMember className="r7c5" callback={this.props.submitChangeShift} shift={"lC"} weekday={'thursday'} />
+			<SelectStaffMember className="r7c6" callback={this.props.submitChangeShift} shift={"lC"} weekday={'friday'} />
 			<div className="r7c7">&nbsp;</div>
 
 			<div className="r8c1 leftheading">Lunch D</div>
-			<SelectStaffMember className="r8c2" />
-			<SelectStaffMember className="r8c3" />
-			<SelectStaffMember className="r8c4" />
-			<SelectStaffMember className="r8c5" />
-			<SelectStaffMember className="r8c6" />
+			<SelectStaffMember className="r8c2" callback={this.props.submitChangeShift} shift={"lD"} weekday={'monday'} />
+			<SelectStaffMember className="r8c3" callback={this.props.submitChangeShift} shift={"lD"} weekday={'tuesday'} />
+			<SelectStaffMember className="r8c4" callback={this.props.submitChangeShift} shift={"lD"} weekday={'wednesday'} />
+			<SelectStaffMember className="r8c5" callback={this.props.submitChangeShift} shift={"lD"} weekday={'thursday'} />
+			<SelectStaffMember className="r8c6" callback={this.props.submitChangeShift} shift={"lD"} weekday={'friday'} />
 			<div className="r8c7">&nbsp;</div>
 
 			<div className="r9">&nbsp;</div>
 
 			<div className="r10c1 leftheading">Afternoon Up stairs</div>
-			<SelectStaffMember className="r10c2" />
-			<SelectStaffMember className="r10c3" />
-			<SelectStaffMember className="r10c4" />
-			<SelectStaffMember className="r10c5" />
-			<SelectStaffMember className="r10c6" />
+			<SelectStaffMember className="r10c2" callback={this.props.submitChangeShift} shift={"aA"} weekday={'monday'} />
+			<SelectStaffMember className="r10c3" callback={this.props.submitChangeShift} shift={"aA"} weekday={'tuesday'} />
+			<SelectStaffMember className="r10c4" callback={this.props.submitChangeShift} shift={"aA"} weekday={'wednesday'} />
+			<SelectStaffMember className="r10c5" callback={this.props.submitChangeShift} shift={"aA"} weekday={'thursday'} />
+			<SelectStaffMember className="r10c6" callback={this.props.submitChangeShift} shift={"aA"} weekday={'friday'} />
 			<div className="r10c7">&nbsp;</div>
 			
 			<div className="r11c1 leftheading">Afternoon Down tairs</div>
-			<SelectStaffMember className="r11c2" />
-			<SelectStaffMember className="r11c3" />
-			<SelectStaffMember className="r11c4" />
-			<SelectStaffMember className="r11c5" />
-			<SelectStaffMember className="r11c6" />
+			<SelectStaffMember className="r11c2" callback={this.props.submitChangeShift} shift={"aB"} weekday={'monday'} />
+			<SelectStaffMember className="r11c3" callback={this.props.submitChangeShift} shift={"aB"} weekday={'tuesday'} />
+			<SelectStaffMember className="r11c4" callback={this.props.submitChangeShift} shift={"aB"} weekday={'wednesday'} />
+			<SelectStaffMember className="r11c5" callback={this.props.submitChangeShift} shift={"aB"} weekday={'thursday'} />
+			<SelectStaffMember className="r11c6" callback={this.props.submitChangeShift} shift={"aB"} weekday={'friday'} />
 			<div className="r11c7">&nbsp;</div>
 			
 			<div className="rc1 leftheading">Afternoon Parking Lot</div>
-			<SelectStaffMember className="r12c2" />
-			<SelectStaffMember className="r12c3" />
-			<SelectStaffMember className="r12c4" />
-			<SelectStaffMember className="r12c5" />
-			<SelectStaffMember className="r12c6" />
+			<SelectStaffMember className="r12c2" callback={this.props.submitChangeShift} shift={"aC"} weekday={'monday'} />
+			<SelectStaffMember className="r12c3" callback={this.props.submitChangeShift} shift={"aC"} weekday={'tuesday'} />
+			<SelectStaffMember className="r12c4" callback={this.props.submitChangeShift} shift={"aC"} weekday={'wednesday'} />
+			<SelectStaffMember className="r12c5" callback={this.props.submitChangeShift} shift={"aC"} weekday={'thursday'} />
+			<SelectStaffMember className="r12c6" callback={this.props.submitChangeShift} shift={"aC"} weekday={'friday'} />
 			<div className="r12c7">&nbsp;</div>
 
 			<div className="h2 heading">Load</div>
