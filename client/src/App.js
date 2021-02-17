@@ -24,8 +24,6 @@ class App extends Component {
   };
 
   render() {
-	console.log('IM TEH APP!!');
-	console.log(this.props); // debug
     return (
       <div className="App">
 		<div className="grid-container">

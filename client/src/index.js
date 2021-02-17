@@ -12,7 +12,6 @@ import reportWebVitals from './reportWebVitals';
 const CHANGE_SHIFT = 'CHANGE_SHIFT';
 
 const changeShift = (employee, weekday, shift) => {
-  console.log("changeShift() called"); // debug
   return {
     type: CHANGE_SHIFT,
     employee: employee,
