@@ -28,8 +28,9 @@
 * When there are too many shifts scheduled in a week for an employee, the number of weekly shifts will appear in bold and red
 * A number of shifts displayed in bold and red will display the error(s) as a caption if you hover the mouse over it for a few seconds
 * Note: In regards to scheculing shifts for lunch, I assumed that these were working shifts (not time off for lunch) so that these will be counted in the shift for day total
-* automated tests have not been implemented yet
-* aesthetics are basic, the focus was on functionality, not aesthetics
+* Automated tests have not been implemented yet
+* Aesthetics are basic, the focus was on functionality, not aesthetics
+* It is likely that the implementation could use improvements, but the goal of this was to get a working application up quickly that met the given requirements rather than perfect code.
 
 #How to use:
 
