@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Select from 'react-select';
+import PropTypes from 'prop-types';
 
 const options = [
   { value: 'None', label: 'None' },
@@ -45,6 +46,11 @@ class SelectStaffMember extends React.Component {
 				onChange={this.handleChange.bind(this)} 				
 			/>;
   }
+}
+SelectStaffMember.propTypes = { 
+	weekday: PropTypes.string.isRequired,
+	shift: PropTypes.string.isRequired,	
+	callback: PropTypes.func.isRequired	
 }
 
 export default SelectStaffMember;

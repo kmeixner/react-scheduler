@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * Displays the weekly number of shifts for an employee. 
@@ -27,6 +28,9 @@ class ShiftLoadForWeek extends React.Component {
 		return <div className="error" title="Too many weekly shifts scheduled.">{this.props.weeklyload}</div>;		
 	}
   }
+}
+ShiftLoadForWeek.propTypes = { 
+	weeklyload: PropTypes.number.isRequired,
 }
 
 export default ShiftLoadForWeek;

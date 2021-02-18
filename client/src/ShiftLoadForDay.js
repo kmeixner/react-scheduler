@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * Displays the number of shifts scheduled for an employee for a weekday.
@@ -61,6 +62,9 @@ class ShiftLoadForDay extends React.Component {
 			return <div className="error" title={sErrorMessages}>{this.props.data.numShiftsForDay}</div>;			
 		}
 	}
+}
+ShiftLoadForDay.propTypes = { 
+	data: PropTypes.object.isRequired,
 }
 
 export default ShiftLoadForDay;
