@@ -9,8 +9,12 @@ import reportWebVitals from './reportWebVitals';
 
 // BEGIN REDUX:
 
-const CHANGE_SHIFT = 'CHANGE_SHIFT';
+// Standard Redux practice, use global constants for action.type labels:
+const CHANGE_SHIFT = 'CHANGE_SHIFT'; 
 
+/** 
+ *change shift will be dispatched to be called by the select drop-downs when a user changes a shift 
+ */
 const changeShift = (employee, weekday, shift) => {
   return {
     type: CHANGE_SHIFT,
@@ -20,6 +24,7 @@ const changeShift = (employee, weekday, shift) => {
   }
 };
 
+// Defines Initial app state:
 const DEFAULT_SHIFT_STATE = {
 	monday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'},
 	tuesday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'},
@@ -28,9 +33,26 @@ const DEFAULT_SHIFT_STATE = {
 	friday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'}
 };
 
+/** 
+ * Reducer handles actions user initiates from UI. 
+ * 
+ * Currently supported actions:
+ *
+ * - CHANGE_SHIFT
+ *
+ * @param object previousState - (default: DEFAULT_SHIFT_STATE) the previous App state
+ * @param object action - Redux format object for action, must contain at least action.type
+ *
+ * @returns object - object containing the new App state.
+ */
 const myReducer = function (previousState = DEFAULT_SHIFT_STATE, action) {
+	
 	switch (action.type) {
+		
 		case CHANGE_SHIFT:
+		
+			// Change assigned employee for given weekday and shift:
+		
 			// *!* don't alter original previousState object since states must be immuntable in Redux *!*:
 			const oNewShiftState = Object.assign({}, previousState); // make copy of previousState
 	  
@@ -63,18 +85,51 @@ const myReducer = function (previousState = DEFAULT_SHIFT_STATE, action) {
 	  
 			// Change Shift Assignment:
 			oNewShiftState[action.weekday][action.shift] = action.employee;
-	  		return oNewShiftState; 
+	  		return oNewShiftState;
+			
 		default:
-			return previousState; // error unsupported action
+			console.log('ERR: Recieved unsupported action: '+action.type);
+			return previousState;
 	}
+	
 };
 
-let store = createStore(myReducer);
+// Create store containing app state:
+// (a Redux store is a single source of truth for app state)
+let store = createStore(myReducer); 
 
+/**
+ * mapStateToeProps is used to allow connected components to read state 
+ * through their props:
+ *
+ * @param object state - current App state
+ *
+ * @returns object - {allShiftInfo: aInfo} where aInfo contains App state 
+ */
 const mapStateToProps = (state) => {
 
 	let aInfo = [];
+	
+	/*** Internal Helper functions: ***/
 
+	/**
+	 * Returns info about number of shifts scheduled for a  given employee 
+	 * for a given weekday in a format similar to the following:
+	 *
+	 * {
+	 * 	numShiftsForDay: 2,
+	 * 	tooManyShiftsForDay: false,
+	 * 	morningSchedulingConflict: true,
+	 * 	afternoonSchedulingConflict: false,
+	 * 	consecutiveLunchSlotsScheduled: false
+	 * };	 
+	 *
+	 * @param state - App state
+	 * @param weekday - the weekday ('monday'|'tuesday'|'wednesday'|'thursday'|'friday')
+	 * @param employee - the employee ('X1'|'X2'...'X7)
+	 * 
+	 * @returns object - object containing shifts and error flags
+	 */
 	const getNumShiftsForEmployeeAndDay = (state, weekday, employee) => {
 		
 		let iTotalNumShifts = 0;
@@ -179,6 +234,17 @@ const mapStateToProps = (state) => {
 
 	}
 	
+	/**
+	 * Returns the number of shifts scheduled for a given employee for the
+	 * entire week.
+	 *
+	 * @param employee - the employee ('X1'|'X2'...'X7)
+	 * @param array aInfo - array containing all shift info where
+	 *                      aInfo[employee][weekday]['numShiftsForDay']
+	 *                      contains a daily shift total.
+	 * 
+	 * @returns int - the number of shifts
+	 */	
 	const getNumShiftsForEmployeeAndWeek = (employee, aInfo) => {
 		
 		let iNumWeeklyShifts = 0;
@@ -191,6 +257,8 @@ const mapStateToProps = (state) => {
 
 		return iNumWeeklyShifts;
 	}
+	
+	/*** Define state information to be passed to props of components ***/
 	
 	for (var i=1; i<=7; i++) {
 		
@@ -216,6 +284,17 @@ const mapStateToProps = (state) => {
 	return {allShiftInfo: aInfo};
 }
 
+/**
+ * Used to allow connected components to have access to call actions through 
+ * their props:
+ *
+ * @param function dispatch - dispatch is a special function of the Redux store
+ * 
+ * @returns object - Redux format object. Each field in the object will be
+ *                   linked to props in connected components. The value of 
+ *                   each field should (normally) be a function that 
+ *                   dispatches an action when called.
+ */
 const mapDispatchToProps = (dispatch) => {
   return {
     submitChangeShift: (employee, weekday, shift) => {
@@ -224,12 +303,19 @@ const mapDispatchToProps = (dispatch) => {
   }
 };
 
-//const Provider = ReactRedux.Provider; // unnecessary , Provider already imported
-//const connect = ReactRedux.connect; // unnecessary , connect already imported
+//const Provider = ReactRedux.Provider; // unnecessary, Provider already imported
+//const connect = ReactRedux.connect; // unnecessary, connect already imported
 
+// Connects state (mapStateToProps) and actions (mapDispatchToProps) to props of <App> component:
 const Container = connect(mapStateToProps,mapDispatchToProps)(App);
 
 // END REDUX (except for <Provider> tag below)
+
+// Display the App:
+//
+// Notes:
+// - we call <Container /> instead of <App /> directly to include the Redux stuff linked via connect() above
+// - the Redux <Provider /> contains 'store' which contains the App state (single source of truth for state)
 
 ReactDOM.render(
 	<Provider store={store}>
