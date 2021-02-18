@@ -29,6 +29,7 @@
 * A number of shifts displayed in bold and red will display the error(s) as a caption if you hover the mouse over it for a few seconds
 * Note: In regards to scheculing shifts for lunch, I assumed that these were working shifts (not time off for lunch) so that these will be counted in the shift for day total
 * automated tests have not been implemented yet
+* aesthetics are basic, the focus was on functionality, not aesthetics
 
 #How to use:
 
