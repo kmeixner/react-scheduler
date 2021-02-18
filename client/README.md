@@ -5,6 +5,8 @@
 
 #The currently implemented functionality is as follows:
 
+![App layout picture](https://raw.githubusercontent.com/kmeixner/react-scheduler/master/client/AppLookInstructions.jpg)
+
 * Level 1: Self contained .zip file, or link to github code repository containing Javascript and package configuration files to start an ExpressJS server, which serves no content
 * Level 2: Server serves a ReactJS page which is static, but similar in shape to the above. Components are preferred a single render function building everything.
 * Level 3: ReactJS page where each X above is replaced with some HTML control allowing a staff member to be selected for a slot.
