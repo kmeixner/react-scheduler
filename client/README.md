@@ -3,9 +3,11 @@
 * This is a react scheduler application given to me as an assignment for a job interview. 
 * It is implemented using React and Redux.
 
-#The currently implemented functionality is as follows:
+#The app layout requirements pic:
 
 ![App layout picture](https://raw.githubusercontent.com/kmeixner/react-scheduler/master/client/AppLookInstructions.jpg)
+
+#The currently implemented functionality is as follows:
 
 * Level 1: Self contained .zip file, or link to github code repository containing Javascript and package configuration files to start an ExpressJS server, which serves no content
 * Level 2: Server serves a ReactJS page which is static, but similar in shape to the above. Components are preferred a single render function building everything.
