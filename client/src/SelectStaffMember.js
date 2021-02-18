@@ -12,6 +12,12 @@ const options = [
   { value: 'X7', label: 'X7' }
 ]
 
+/**
+ * <SelectStaffMember /> creates a select drop-down of available employees.
+ * When the user selects and employee (or 'None') a callback will be called:
+ *
+ * this.props.callback(event.value, this.props.weekday, this.props.shift)
+ */
 class SelectStaffMember extends React.Component {
 
   constructor(props) {

@@ -25,6 +25,12 @@ const changeShift = (employee, weekday, shift) => {
 };
 
 // Defines Initial app state:
+//
+// Notes: 
+//  - mA, mB, mC represents Morning Up Stairs, Morning Down Stairs, Morning Parking Lot, respectfully
+//  - aA, aB, aC represents Afternoon Up Stairs, Afternoon Down Stairs, Afternoon Parking Lot, respectfully
+//  - lA, lB, lC, lD represents Lunch A, Lunch B, Lunch C, Lunch D, respectully
+//
 const DEFAULT_SHIFT_STATE = {
 	monday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'},
 	tuesday:{mA:'None', mB:'None', mC:'None', lA:'None', lB:'None', lC:'None', lD:'None', aA:'None', aB:'None', aC:'None'},

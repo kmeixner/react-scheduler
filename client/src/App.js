@@ -4,6 +4,9 @@ import ShiftLoadForDay from './ShiftLoadForDay';
 import ShiftLoadForWeek from './ShiftLoadForWeek';
 import './App.css';
 
+/**
+ * <App /> Defines the entire App UI.
+ */
 class App extends Component {
 
   componentDidMount() {
@@ -12,7 +15,8 @@ class App extends Component {
       .then(res => this.setState({ data: res.express }))
       .catch(err => console.log(err));
   }
-    // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
+  
+  // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
   callBackendAPI = async () => {
     const response = await fetch('/express_backend');
     const body = await response.json();
@@ -40,7 +44,7 @@ class App extends Component {
 			<div className="t1h6 heading">Friday</div>
 			<div className="t1h7">&nbsp;</div>
 			
-			<div className="r1c1 leftheading">Morning Up stairs</div>
+			<div className="r1c1 leftheading">Morning Up Stairs</div>
 			<SelectStaffMember className="r1c2" callback={this.props.submitChangeShift} shift={"mA"} weekday={'monday'} />
 			<SelectStaffMember className="r1c3" callback={this.props.submitChangeShift} shift={"mA"} weekday={'tuesday'} />
 			<SelectStaffMember className="r1c4" callback={this.props.submitChangeShift} shift={"mA"} weekday={'wednesday'} />
@@ -48,7 +52,7 @@ class App extends Component {
 			<SelectStaffMember className="r1c6" callback={this.props.submitChangeShift} shift={"mA"} weekday={'friday'} />
 			<div className="r1c7">&nbsp;</div>
 			
-			<div className="r2c1 leftheading">Morning Down tairs</div>
+			<div className="r2c1 leftheading">Morning Down Stairs</div>
 			<SelectStaffMember className="r2c2" callback={this.props.submitChangeShift} shift={"mB"} weekday={'monday'} />
 			<SelectStaffMember className="r2c3" callback={this.props.submitChangeShift} shift={"mB"} weekday={'tuesday'} />
 			<SelectStaffMember className="r2c4" callback={this.props.submitChangeShift} shift={"mB"} weekday={'wednesday'} />
