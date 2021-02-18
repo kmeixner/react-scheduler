@@ -1,5 +1,18 @@
 import React from 'react';
 
+/**
+ * Displays the weekly number of shifts for an employee. 
+ *
+ * If there are more than 7 weekly shifts then the number of shifts 
+ * will be displayed with className="error" format (ie: bold and red) and 
+ * will include an HTML title tag so that hovering the mouse over the number 
+ * for a couple of sections will display a caption with the error message
+ * to the user.
+ *
+ * Required props:
+ * 
+ * @param int weeklyload - the number of shifts to display.
+ */
 class ShiftLoadForWeek extends React.Component {
 
   constructor(props) {

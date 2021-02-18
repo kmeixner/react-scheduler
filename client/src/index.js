@@ -130,9 +130,9 @@ const mapStateToProps = (state) => {
 	 * 	consecutiveLunchSlotsScheduled: false
 	 * };	 
 	 *
-	 * @param state - App state
-	 * @param weekday - the weekday ('monday'|'tuesday'|'wednesday'|'thursday'|'friday')
-	 * @param employee - the employee ('X1'|'X2'...'X7)
+	 * @param object state - App state
+	 * @param string weekday - the weekday ('monday'|'tuesday'|'wednesday'|'thursday'|'friday')
+	 * @param string employee - the employee ('X1'|'X2'...'X7)
 	 * 
 	 * @returns object - object containing shifts and error flags
 	 */

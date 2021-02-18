@@ -1,5 +1,27 @@
 import React from 'react';
 
+/**
+ * Displays the number of shifts scheduled for an employee for a weekday.
+ *
+ * If there are any error flags detected in the data, the number of shifts 
+ * will be displayed with className="error" format (ie: bold and red) and 
+ * will include an HTML title tag so that hovering the mouse over the number 
+ * for a couple of sections will display a caption with the error message(s)
+ * to the user.
+ *
+ * Required props:
+ * 
+ * @param object data - the daily shift info for the employee, which must 
+ * 		contain at least the info similar to the following:
+ *
+ * 		{
+ *			numShiftsForDay: 2,
+ *			tooManyShiftsForDay: false,   
+ *			morningSchedulingConflict: true,
+ *			afternoonSchedulingConflict: false,
+ *			consecutiveLunchSlotsScheduled: false
+ *		} 
+ */
 class ShiftLoadForDay extends React.Component {
 
 	constructor(props) {
